@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&display=swap');
+
+:root{
+    --cor-primeira-parte:#4D75C2;
+    --cor-info:#99d882;
+    --cor-borda-foto:#A0C892;
+    --cor-numeros:#49B3BB;
+    --cor-texto-numeros:#9BAED1;
+    --cor-ultima-parte:#A6BAE0;
+    --cor-botao:#45ABC6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html,
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+header{
+    background-color: var(--cor-primeira-parte);
+    background: linear-gradient(180deg, #4265e0 0%, #577999 100%);
+
+    height: 265px;
+    text-align: center;
+    padding: 2rem;
+    letter-spacing: 2.5px;
+}
+
+header h1{
+    text-transform: uppercase;
+    color: white;;
+    margin: 1rem;
+
+}
+
+header img{
+    border:solid 5px var(--cor-borda-foto) ;
+    border-radius: 100px;
+    box-shadow: 0 0 20px black;
+    height: 200px;
+    margin-top: 2rem;
+}
+
+.alinhamento{
+    flex-direction: column;
+}
+
+
+#info{
+    color: var(--cor-info);
+    font-size: 1rem;
+}
+
+#numeros-sociais{
+    text-align: center;
+    font-size: 2rem;
+    justify-content: center;
+    margin-top: 6rem;
+    letter-spacing: 3.5px;
+    
+
+}
+
+#numeros-sociais p{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+
+}
+
+.numero{
+    color: var(--cor-numeros);
+}
+
+.texto-numeros{
+    color: var(--cor-texto-numeros)
+}
+
+.flex{
+    display: flex;
+
+}
+
+.fundo-escuro{
+    background-color: var(--cor-ultima-parte);
+
+}
+
+#sobre{
+    text-align: center;
+    padding: 20px;
+}
+
+#sobre h1{
+    margin-bottom: 20px;
+}
+
+#sobre p{
+    line-height:1.6;
+}
+
+#botao{
+    padding: 30px;
+    text-align: center;
+}
+
+#botao a{
+    background-color: var(--cor-botao);
+    border-radius: 100px;
+    color: white;
+    display: block;
+    letter-spacing: 5x;
+    padding: 2rem;
+    text-decoration:none;
+    text-transform:uppercase;
+    width: 100%;
+    font-weight: bold;
+    font-size: 2rem;
+    
+
+}
+
+a{
+    transition: all ease-in-out .2s;
+
+}
+
+a:hover{
+    transform: scale(1.025);
+
+}
+
+@media screen and (min-width: 960px){
+    body{
+        margin: 0 auto;
+    }
+
+    header img{
+        height: 300px;
+        border-radius: 150px;
+    }
+
+    #info{
+        font-size: 1.5rem;
+    }
+
+    #sobre h1{
+        font-size: 1.6rem;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+   
+    #sobre{
+        font-size: 0.5rem;
+    } 
+     
+    #sobre p{
+        font-size: 1.3rem;
+        margin-left: 80px;
+        margin-right: 80px;
+
+
+     }
+
+     #numeros-sociais{
+        text-align: center;
+        font-size: 2rem;
+        justify-content: center;
+        margin-top: 10rem;
+        letter-spacing: 3.5px;
+        
+    
+    }
+    
+    #numeros-sociais p{
+        padding-top:20px ;
+        padding-left: 20vw;
+        padding-right: 20vw;
+        padding-bottom: 10px;
+        justify-content: space-around;
+      ;
+    
+    }
+   
+    #botao a{
+        width: 30vw;
+        margin: auto;
+    }
+}
+
